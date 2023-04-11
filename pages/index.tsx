@@ -1,13 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Auth from './auth'
 
 export default function Home() {
   return (
     <>
-    <h1>landing page</h1>
     
     </>
   )
