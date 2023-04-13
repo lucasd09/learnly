@@ -15,3 +15,9 @@ export const container = style({
   display: "flex",
   flexDirection: "column",
 });
+
+export const input = style({});
+
+export const button = style({});
+
+export const buttonVariant = style({});
