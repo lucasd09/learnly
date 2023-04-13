@@ -4,13 +4,13 @@ import logo from "@/public/frame.svg";
 
 const Sidebar: React.FC = () => {
   return (
-    <div>
+    <aside>
       <div>
         <Image alt="logo" src={logo} />
       </div>
       <div>itens</div>
       <div>bottomitens</div>
-    </div>
+    </aside>
   );
 };
 
