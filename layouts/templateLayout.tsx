@@ -1,3 +1,4 @@
+import Sidebar from "@/components/sidebar";
 import React from "react";
 
 const TemplateLayout: React.FC<baseProps> = ({ children }) => {
