@@ -9,6 +9,7 @@ const Sidebar: React.FC = () => {
         <Image alt="logo" src={logo} />
       </div>
       <div>itens</div>
+      <div>bottomitens</div>
     </div>
   );
 };

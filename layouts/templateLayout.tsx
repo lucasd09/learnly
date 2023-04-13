@@ -3,7 +3,7 @@ import React from "react";
 
 const TemplateLayout: React.FC<baseProps> = ({ children }) => {
   return (
-    <div>
+    <div className={template}>
       <Sidebar />
       {children}
     </div>
