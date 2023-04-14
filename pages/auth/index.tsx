@@ -1,9 +1,27 @@
 import Link from "next/link";
-import React from "react";
-import { wrapper, container, button, buttonVariant, input , checkbox, label, inputContainer, checkboxContainer } from "./styles.css";
+import React, { ReactNode } from "react";
+import {
+  wrapper,
+  container,
+  button,
+  buttonVariant,
+  input,
+  checkbox,
+  label,
+  inputContainer,
+  checkboxContainer,
+} from "./styles.css";
 import Logo from "@/components/logo";
+import Layout from "@/layouts/default";
+import { PageWithLayout } from "@/types/pageWithLayout";
 
 const Auth: React.FC = () => {
+  (Auth as unknown as PageWithLayout).getLayout = function getLayout(
+    page: ReactNode
+  ) {
+    return <Layout>{page}</Layout>;
+  };
+
   return (
     <div className={wrapper}>
       <div className={container}>
@@ -14,9 +32,9 @@ const Auth: React.FC = () => {
         </div>
         <div className={inputContainer}>
           <label className={label}>Senha</label>
-          <input type="password" className={input}/>
+          <input type="password" className={input} />
         </div>
-        
+
         <div className={checkboxContainer}>
           <label>
             <input type="checkbox" className={checkbox} />
