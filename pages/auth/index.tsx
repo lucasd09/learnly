@@ -1,20 +1,36 @@
 import Link from "next/link";
-import React from "react";
-import { wrapper, container, button, buttonVariant, input } from "./styles.css";
+import React, { ReactNode } from "react";
+import {
+  wrapper,
+  container,
+  button,
+  buttonVariant,
+  input,
+  checkbox,
+  label,
+  inputContainer,
+  checkboxContainer,
+} from "./styles.css";
 import Logo from "@/components/logo";
+import Layout from "@/layouts/default";
 
 const Auth: React.FC = () => {
   return (
     <div className={wrapper}>
       <div className={container}>
         <Logo />
-        <label>Email</label>
-        <input type="text" className={input} />
-        <label>Senha</label>
-        <input type="password" />
-        <div>
+        <div className={inputContainer}>
+          <label className={label}>Email</label>
+          <input type="text" className={input} />
+        </div>
+        <div className={inputContainer}>
+          <label className={label}>Senha</label>
+          <input type="password" className={input} />
+        </div>
+
+        <div className={checkboxContainer}>
           <label>
-            <input type="checkbox" className={input} />
+            <input type="checkbox" className={checkbox} />
             Lembrar de mim
           </label>
           <Link href={"/"}>Esqueci minha senha</Link>
