@@ -1,9 +1,20 @@
-import React from 'react';
+import TemplateLayout from "@/layouts/templateLayout";
+import {
+  AppPropsWithLayout,
+  NextPageWithLayout,
+} from "@/types/NextPageWithLayout";
+import React, { ReactElement } from "react";
 
-const Dashboard: React.FC = () => {
-  return <div>
+const Dashboard: NextPageWithLayout = () => {
+  return (
+    <div>
       <h1>Dashboard</h1>
-  </div>;
-}
+    </div>
+  );
+};
+
+Dashboard.getLayout = function getLayout(page: ReactElement) {
+  return <TemplateLayout>{page}</TemplateLayout>;
+};
 
 export default Dashboard;
