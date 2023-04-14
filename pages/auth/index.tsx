@@ -13,15 +13,8 @@ import {
 } from "./styles.css";
 import Logo from "@/components/logo";
 import Layout from "@/layouts/default";
-import { PageWithLayout } from "@/types/pageWithLayout";
 
 const Auth: React.FC = () => {
-  (Auth as unknown as PageWithLayout).getLayout = function getLayout(
-    page: ReactNode
-  ) {
-    return <Layout>{page}</Layout>;
-  };
-
   return (
     <div className={wrapper}>
       <div className={container}>
