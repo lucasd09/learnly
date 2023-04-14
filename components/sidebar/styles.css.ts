@@ -21,5 +21,9 @@ export const logoalt = style({
 });
 
 export const img = style({
-  margin: "0 12px 0 12px",
+  margin: "0 12px 0 11px",
+});
+
+export const text = style({
+  color: "#2A3342",
 });

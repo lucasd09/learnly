@@ -1,0 +1,3 @@
+interface navItemProps {
+  icon: String;
+}
