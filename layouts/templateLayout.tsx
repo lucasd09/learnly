@@ -1,12 +1,15 @@
 import Sidebar from "@/components/sidebar";
 import React from "react";
-import { template } from "./styles.css";
+import { template, topbar, wrapper } from "./styles.css";
 
 const TemplateLayout: React.FC<baseProps> = ({ children }) => {
   return (
     <div className={template}>
       <Sidebar />
-      {children}
+      <div className={wrapper}>
+        <span className={topbar}></span>
+        {children}
+      </div>
     </div>
   );
 };
