@@ -33,3 +33,7 @@ export const img = style({
 export const text = style({
   color: "#2A3342",
 });
+
+export const link = style({
+  textDecoration: "none",
+});
