@@ -1,10 +1,21 @@
 import { style, styleVariants } from "@vanilla-extract/css";
-import { themeClass, vars } from "@/styles/theme.css";
+import { vars } from "@/styles/theme.css";
 
-export const wrapper = style({
-  display: "flex",
-  height: "50px",
-  alignItems: "center",
+export const wrapper = styleVariants({
+  active: {
+    backgroundColor: vars.pallete.indigo[100],
+    color: vars.colors.primary,
+    display: "flex",
+    height: "50px",
+    alignItems: "center",
+  },
+  inactive: {
+    backgroundColor: vars.pallete.white,
+    color: vars.colors.secondary.light,
+    display: "flex",
+    height: "50px",
+    alignItems: "center",
+  },
 });
 
 export const iconContainer = style({
@@ -12,8 +23,4 @@ export const iconContainer = style({
   alignItems: "center",
   justifyContent: "center",
   margin: "0 12px 0 12px",
-});
-
-export const text = style({
-  color: vars.colors.text.light,
 });

@@ -26,54 +26,78 @@ const Sidebar: React.FC = () => {
             handleClick("dashboard");
           }}
         >
-          <PanelButton iconName="dashboard" label="Dashboard" />
+          <PanelButton
+            iconName="dashboard"
+            label="Dashboard"
+            active={activeLink === "dashboard"}
+          />
         </Link>
         <Link
           href={"subjects"}
           className={link}
           onClick={() => {
-            handleClick("dashboard");
+            handleClick("subjects");
           }}
         >
-          <PanelButton iconName="auto_stories" label="Matérias" />
+          <PanelButton
+            iconName="auto_stories"
+            label="Matérias"
+            active={activeLink === "subjects"}
+          />
         </Link>
         <Link
-          href={"dashboard"}
+          href={"faults"}
+          className={link}
+          onClick={() => {
+            handleClick("faults");
+          }}
+        >
+          <PanelButton
+            iconName="free_cancellation"
+            label="Faltas"
+            active={activeLink === "faults"}
+          />
+        </Link>
+        <Link
+          href={"grades"}
           className={link}
           onClick={() => {
             handleClick("dashboard");
           }}
         >
-          <PanelButton iconName="free_cancellation" label="Faltas" />
+          <PanelButton
+            iconName="receipt_long"
+            label="Boletim"
+            active={activeLink === "grades"}
+          />
         </Link>
         <Link
-          href={"dashboard"}
+          href={"schedule"}
           className={link}
           onClick={() => {
-            handleClick("dashboard");
+            handleClick("schedule");
           }}
         >
-          <PanelButton iconName="receipt_long" label="Boletim" />
-        </Link>
-        <Link
-          href={"dashboard"}
-          className={link}
-          onClick={() => {
-            handleClick("dashboard");
-          }}
-        >
-          <PanelButton iconName="calendar_today" label="Horários" />
+          <PanelButton
+            iconName="calendar_today"
+            label="Horários"
+            active={activeLink === "schedule"}
+          />
         </Link>
       </div>
       <div className={bottomItems}>
         <Link
-          href={"dashboard"}
+          href={"settings"}
           className={link}
           onClick={() => {
-            handleClick("dashboard");
+            handleClick("settings");
           }}
         >
-          <PanelButton iconName="settings" label="Preferências" />
+          <PanelButton
+            iconName="settings"
+            label="Preferências"
+            active={activeLink === "settings"}
+          />
         </Link>
       </div>
     </aside>
