@@ -1,8 +1,8 @@
-import "material-design-icons/iconfont/material-icons.css";
+import "material-symbols/outlined.css";
 import React from "react";
 
 const Icon: React.FC<IconProps> = ({ icon }) => {
-  return <i className="material-icons">{icon}</i>;
+  return <i className="material-symbols-outlined">{icon}</i>;
 };
 
 export default Icon;

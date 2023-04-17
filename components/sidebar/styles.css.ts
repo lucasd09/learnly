@@ -3,6 +3,7 @@ import { style } from "@vanilla-extract/css";
 export const wrapper = style({
   display: "flex",
   flexDirection: "column",
+  justifyContent: "space-between",
   backgroundColor: "white",
   borderRight: "1px solid #D1D5DB",
   width: "50px",
@@ -12,6 +13,11 @@ export const wrapper = style({
   ":hover": {
     width: "150px",
   },
+});
+
+export const bottomItems = style({
+  display: "flex",
+  flexDirection: "column",
 });
 
 export const logoalt = style({
