@@ -19,3 +19,10 @@ export const topbar = style({
   backgroundColor: 'white',
   borderBottom: "1px solid #D1D5DB",
 });
+
+export const childrenLayout = style({
+  width: '100%',
+  height: '100%',
+  paddingTop: '61px',
+  paddingLeft: '40px',
+});

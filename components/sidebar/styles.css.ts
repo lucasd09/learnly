@@ -9,6 +9,7 @@ export const wrapper = style({
   width: "50px",
   transition: "width 0.1s ease-in-out",
   overflow: "hidden",
+  transitionDuration: "500ms",
 
   ":hover": {
     width: "150px",
