@@ -22,6 +22,7 @@ export const input = style({
   boxShadow: "0px 1px 2px rgba(0, 0, 0, 0.05)",
   borderRadius: "8px",
   border: "1px solid #D5DAE1",
+  padding: "0 8px 0 8px",
 });
 
 export const checkbox = style({
@@ -53,7 +54,7 @@ export const label = style({
 });
 
 export const text = style({
-  textAlign: 'center'
+  textAlign: "center",
 });
 
 export const button = styleVariants({
