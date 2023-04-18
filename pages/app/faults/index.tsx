@@ -2,16 +2,16 @@ import TemplateLayout from "@/layouts/templateLayout";
 import { NextPageWithLayout } from "@/types/NextPageWithLayout";
 import React, { ReactElement } from "react";
 
-const Dashboard: NextPageWithLayout = () => {
+const Faults: NextPageWithLayout = () => {
   return (
     <div>
-      <h1>Dashboard</h1>
+      <h1>Faltas</h1>
     </div>
   );
 };
 
-Dashboard.getLayout = function getLayout(page: ReactElement) {
+Faults.getLayout = function getLayout(page: ReactElement) {
   return <TemplateLayout>{page}</TemplateLayout>;
 };
 
-export default Dashboard;
+export default Faults;

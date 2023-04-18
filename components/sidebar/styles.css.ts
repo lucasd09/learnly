@@ -11,7 +11,7 @@ export const wrapper = style({
   overflow: "hidden",
 
   ":hover": {
-    width: "150px",
+    width: "175px",
   },
 });
 
