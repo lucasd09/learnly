@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css";
+import { style, styleVariants } from "@vanilla-extract/css";
 
 export const wrapper = style({
   display: "flex",
@@ -11,9 +11,9 @@ export const wrapper = style({
 export const container = style({
   width: "358px",
   height: "583px",
-  backgroundColor: "white",
   display: "flex",
   flexDirection: "column",
+  justifyContent: "space-between",
 });
 
 export const input = style({
@@ -29,7 +29,10 @@ export const checkbox = style({
 });
 
 export const inputContainer = style({
-  margin: "12px 0px 12px 0px",
+  height: "150px",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
 });
 
 export const checkboxContainer = style({
@@ -38,14 +41,40 @@ export const checkboxContainer = style({
   justifyContent: "space-between",
 });
 
+export const buttonContainer = style({
+  display: "flex",
+  flexDirection: "column",
+});
+
 export const label = style({
   fontSize: "16px",
   fontWeight: "500",
   color: "#333F51",
 });
 
-export const button = style({
-  height: "46px",
+export const text = style({
+  textAlign: 'center'
 });
 
-export const buttonVariant = style({});
+export const button = styleVariants({
+  primary: {
+    cursor: "pointer",
+    marginTop: "16px",
+    marginBottom: "16px",
+    height: "46px",
+    fontSize: "16px",
+    fontWeight: "600",
+    color: "white",
+    backgroundColor: "#6366f1",
+    border: "none",
+    borderRadius: "8px",
+  },
+  secondary: {
+    cursor: "pointer",
+    height: "46px",
+    fontSize: "16px",
+    fontWeight: "600",
+    backgroundColor: "white",
+    borderRadius: "8px",
+  },
+});

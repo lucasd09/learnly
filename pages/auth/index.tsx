@@ -4,12 +4,13 @@ import {
   wrapper,
   container,
   button,
-  buttonVariant,
   input,
   checkbox,
   label,
   inputContainer,
   checkboxContainer,
+  buttonContainer,
+  text,
 } from "./styles.css";
 import Logo from "@/components/logo";
 import Layout from "@/layouts/default";
@@ -22,8 +23,6 @@ const Auth: React.FC = () => {
         <div className={inputContainer}>
           <label className={label}>Email</label>
           <input type="text" className={input} />
-        </div>
-        <div className={inputContainer}>
           <label className={label}>Senha</label>
           <input type="password" className={input} />
         </div>
@@ -35,9 +34,12 @@ const Auth: React.FC = () => {
           </label>
           <Link href={"/"}>Esqueci minha senha</Link>
         </div>
-        <button className={button}>Login</button>
-        <button className={buttonVariant}>Continuar com Google</button>
-        <p>
+        <div className={buttonContainer}>
+          <button className={button.primary}>Login</button>
+          <button className={button.secondary}>Continuar com Google</button>
+        </div>
+
+        <p className={text}>
           Não possui conta? <Link href={"/register"}>Registre-se</Link>
         </p>
       </div>
