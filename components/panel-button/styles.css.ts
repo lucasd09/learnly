@@ -3,7 +3,7 @@ import { vars } from "@/styles/theme.css";
 
 export const wrapper = styleVariants({
   active: {
-    backgroundColor: '#EEF2FF',
+    backgroundColor: "#EEF2FF",
     borderLeft: "3px solid #6366F1",
     color: "#6366F1",
     display: "flex",
@@ -18,7 +18,7 @@ export const wrapper = styleVariants({
     height: "50px",
     alignItems: "center",
     ":hover": {
-      backgroundColor: '#EEF2FF',
+      backgroundColor: "#EEF2FF",
     },
     fontWeight: "400",
   },
