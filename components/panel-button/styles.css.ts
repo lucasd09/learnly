@@ -19,6 +19,7 @@ export const wrapper = styleVariants({
     display: "flex",
     height: "50px",
     alignItems: "center",
+    transition: "0.2s ease-in-out",
     ":hover": {
       backgroundColor: "#EEF2FF",
     },
