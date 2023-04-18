@@ -1,9 +1,6 @@
 import TemplateLayout from "@/layouts/templateLayout";
 import { titleLayout } from "@/layouts/styles.css";
-import {
-  AppPropsWithLayout,
-  NextPageWithLayout,
-} from "@/types/NextPageWithLayout";
+import { NextPageWithLayout } from "@/types/NextPageWithLayout";
 import React, { ReactElement } from "react";
 
 const Dashboard: NextPageWithLayout = () => {
