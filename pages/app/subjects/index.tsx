@@ -1,4 +1,5 @@
 import Dropdown from "@/components/dropdown";
+import { titleLayout } from "@/layouts/styles.css";
 import TemplateLayout from "@/layouts/templateLayout";
 import { NextPageWithLayout } from "@/types/NextPageWithLayout";
 import React, { ReactElement, useState } from "react";
@@ -20,7 +21,7 @@ const Subjects: NextPageWithLayout = () => {
 
   return (
     <div>
-      <h1>Matérias</h1>
+      <h1 className={titleLayout}>Matérias</h1>
       <div>
         <Dropdown
           options={options}

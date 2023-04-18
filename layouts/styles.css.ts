@@ -26,3 +26,7 @@ export const childrenLayout = style({
   paddingTop: '61px',
   paddingLeft: '40px',
 });
+
+export const titleLayout = style({
+  color: '#556987',
+});
