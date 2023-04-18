@@ -62,7 +62,7 @@ const Sidebar: React.FC = () => {
           href={"grades"}
           className={link}
           onClick={() => {
-            handleClick("dashboard");
+            handleClick("grades");
           }}
         >
           <PanelButton

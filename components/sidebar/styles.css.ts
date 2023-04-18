@@ -12,7 +12,7 @@ export const wrapper = style({
   transitionDuration: "500ms",
 
   ":hover": {
-    width: "150px",
+    width: "175px",
   },
 });
 

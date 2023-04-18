@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { ReactNode } from "react";
+import React from "react";
 import {
   wrapper,
   container,
@@ -13,7 +13,6 @@ import {
   text,
 } from "./styles.css";
 import Logo from "@/components/logo";
-import Layout from "@/layouts/default";
 
 const Auth: React.FC = () => {
   return (
