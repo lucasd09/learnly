@@ -3,18 +3,24 @@ import { vars } from "@/styles/theme.css";
 
 export const wrapper = styleVariants({
   active: {
-    backgroundColor: vars.pallete.indigo[100],
-    color: vars.colors.primary,
+    backgroundColor: '#EEF2FF',
+    borderLeft: "3px solid #6366F1",
+    color: "#6366F1",
     display: "flex",
     height: "50px",
     alignItems: "center",
+    fontWeight: "600",
   },
   inactive: {
     backgroundColor: vars.pallete.white,
-    color: vars.colors.secondary.light,
+    color: "#6B7280",
     display: "flex",
     height: "50px",
     alignItems: "center",
+    ":hover": {
+      backgroundColor: '#EEF2FF',
+    },
+    fontWeight: "400",
   },
 });
 
