@@ -28,5 +28,8 @@ export const childrenLayout = style({
 });
 
 export const titleLayout = style({
+  fontWeight: '500',
+  fontSize: '24px',
+  lineHeight: '28px',
   color: '#556987',
 });
