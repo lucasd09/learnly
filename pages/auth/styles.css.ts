@@ -77,5 +77,6 @@ export const button = styleVariants({
     fontWeight: "600",
     backgroundColor: "white",
     borderRadius: "8px",
+    border: "1px solid #D5DAE1",
   },
 });
