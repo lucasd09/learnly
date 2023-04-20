@@ -1,11 +1,15 @@
-import { gridContainer, gridTitleContainer } from "./styles.css";
+import {
+  panelContainer,
+  panelContent,
+  panelTitleContainer,
+} from "./styles.css";
 import React from "react";
 
 const Panel: React.FC<PanelProps> = ({ title, children }) => {
   return (
-    <div className={gridContainer}>
-      <div className={gridTitleContainer}>{title}</div>
-      {children}
+    <div className={panelContainer}>
+      <div className={panelTitleContainer}>{title}</div>
+      <div className={panelContent}>{children}</div>
     </div>
   );
 };

@@ -20,10 +20,9 @@ export const topbar = style({
 });
 
 export const childrenLayout = style({
-  width: "100%",
-  height: "100%",
   paddingTop: "61px",
   paddingLeft: "40px",
+  paddingRight: "40px",
 });
 
 export const titleLayout = style({
