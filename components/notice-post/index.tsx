@@ -1,23 +1,20 @@
 import React from "react";
-import { header } from "./styles.css";
+import { contentText, header } from "./styles.css";
 import Icon from "../icon";
+import Image from "next/image";
 
-const NoticePost: React.FC = () => {
+const NoticePost: React.FC<PostProps> = ({ post }) => {
   return (
     <div>
       <div className={header}>
         <Icon icon="account_circle" />
         <div>
-          <h1>Luis hilário</h1>
-          <p>Coordenador</p>
+          <h1>{post.name}</h1>
+          <p>{post.role}</p>
         </div>
       </div>
       <div>
-        <p>
-          Bom dia pessoal! estão Abertas as incrições para o POSCOMP, espero
-          todos vocês lá!
-        </p>
-        
+        <p className={contentText}>{post.text}</p>
       </div>
     </div>
   );

@@ -7,6 +7,13 @@ import NoticePost from "@/components/notice-post";
 import { content } from "./styles.css";
 import Scrollbars from "react-custom-scrollbars";
 
+const post: Post = {
+  name: "luis hilario",
+  role: "Coordenador",
+  text: "Bom dia pessoal! estão Abertas as incrições para o POSCOMP, espero todos vocês lá!",
+  imgURL: "URL",
+};
+
 const Dashboard: NextPageWithLayout = () => {
   return (
     <div>
@@ -18,12 +25,26 @@ const Dashboard: NextPageWithLayout = () => {
           <Panel title="Entregas">CHILDREN</Panel>
         </div>
         <Panel title="Avisos">
-          <Scrollbars style={{ width: 400, height: 400 }}>
-            <NoticePost />
-            <NoticePost />
-            <NoticePost />
-            <NoticePost />
-            <NoticePost />
+          <Scrollbars
+            universal
+            autoHeight
+            autoHide
+            // Hide delay in ms
+            autoHideTimeout={1000}
+            // Duration for hide animation in ms.
+            autoHideDuration={200}
+            hideTracksWhenNotNeeded
+            autoHeightMax={500}
+          >
+            <NoticePost post={post} />
+            <NoticePost post={post} />
+            <NoticePost post={post} />
+            <NoticePost post={post} />
+            <NoticePost post={post} />
+            <NoticePost post={post} />
+            <NoticePost post={post} />
+            <NoticePost post={post} />
+            <NoticePost post={post} />
           </Scrollbars>
         </Panel>
       </div>
