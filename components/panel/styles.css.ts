@@ -1,14 +1,14 @@
 import { style } from '@vanilla-extract/css';
 
 export const gridContainer = style({
-    display: 'flex',
+    display: 'grid',
     flexDirection: 'column',
     backgroundColor: '#FFFFFF',
     borderRadius: '10px',
     border: '1px solid #D1D5DB',
     marginTop: '12px',
     maxHeight: '490px',
-    maxWidth: '40%',
+    maxWidth: '597px',
 });
 
 export const gridTitleContainer = style({
