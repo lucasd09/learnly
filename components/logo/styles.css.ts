@@ -6,4 +6,6 @@ export const wrapper = style({
   alignItems: "center",
 });
 
-export const img = style({});
+export const img = style({
+  
+});

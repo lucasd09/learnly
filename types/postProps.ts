@@ -1,3 +1,0 @@
-interface PostProps {
-  post: Post;
-}

@@ -1,3 +1,4 @@
+import { vars } from "@/styles/theme.css";
 import { style } from "@vanilla-extract/css";
 
 export const template = style({
@@ -7,26 +8,28 @@ export const template = style({
 });
 
 export const wrapper = style({
-  display: "flex",
-  flexDirection: "column",
-  width: "100%",
+  display: 'flex',
+  flexDirection: 'column',
+  width: '100%',
 });
 
 export const topbar = style({
-  width: "100%",
-  height: "40px",
-  backgroundColor: "white",
+  width: '100%',
+  height: '40px',
+  backgroundColor: 'white',
   borderBottom: "1px solid #D1D5DB",
 });
 
 export const childrenLayout = style({
-  paddingTop: "61px",
-  paddingLeft: "40px",
-  paddingRight: "40px",
+  width: '100%',
+  height: '100%',
+  paddingTop: '61px',
+  paddingLeft: '40px',
 });
 
 export const titleLayout = style({
-  fontSize: "24px",
-  lineHeight: "28px",
-  color: "#556987",
+  fontWeight: '500',
+  fontSize: '24px',
+  lineHeight: '28px',
+  color: '#556987',
 });
