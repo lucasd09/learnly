@@ -3,9 +3,9 @@ import {
   panelContent,
   panelTitleContainer,
 } from "./styles.css";
-import React from "react";
+import { FC } from "react";
 
-const Panel: React.FC<PanelProps> = ({ title, children }) => {
+const Panel: FC<PanelProps> = ({ title, children }) => {
   return (
     <div className={panelContainer}>
       <div className={panelTitleContainer}>{title}</div>

@@ -6,6 +6,9 @@ export const panelContainer = style({
   border: "1px solid #D1D5DB",
   marginTop: "12px",
   width: "fit-content",
+  maxHeight: "530px",
+  overflow: "clip",
+  scrollBehavior: "smooth",
 });
 
 export const panelTitleContainer = style({
