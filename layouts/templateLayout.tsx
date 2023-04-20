@@ -8,9 +8,7 @@ const TemplateLayout: React.FC<baseProps> = ({ children }) => {
       <Sidebar />
       <div className={wrapper}>
         <span className={topbar}></span>
-        <div className={childrenLayout}>
-          {children}
-        </div>
+        <div className={childrenLayout}>{children}</div>
       </div>
     </div>
   );

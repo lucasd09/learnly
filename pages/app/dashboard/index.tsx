@@ -8,9 +8,7 @@ const Dashboard: NextPageWithLayout = () => {
   return (
     <div>
       <h1 className={titleLayout}>Visão Geral</h1>
-        <Panel title="Matérias">
-          CHILDREN
-        </Panel>
+      <Panel title="Matérias">CHILDREN</Panel>
     </div>
   );
 };
