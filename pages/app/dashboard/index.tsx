@@ -5,6 +5,7 @@ import React, { ReactElement } from "react";
 import Panel from "@/components/panel";
 import NoticePost from "@/components/notice-post";
 import { content } from "./styles.css";
+import Scrollbars from "react-custom-scrollbars";
 
 const Dashboard: NextPageWithLayout = () => {
   return (
@@ -17,20 +18,13 @@ const Dashboard: NextPageWithLayout = () => {
           <Panel title="Entregas">CHILDREN</Panel>
         </div>
         <Panel title="Avisos">
-          <NoticePost />
-          <NoticePost />
-          <NoticePost />
-          <NoticePost />
-          <NoticePost />
-          <NoticePost />
-          <NoticePost />
-          <NoticePost />
-          <NoticePost />
-          <NoticePost />
-          <NoticePost />
-          <NoticePost />
-          <NoticePost />
-          <NoticePost />
+          <Scrollbars style={{ width: 400, height: 400 }}>
+            <NoticePost />
+            <NoticePost />
+            <NoticePost />
+            <NoticePost />
+            <NoticePost />
+          </Scrollbars>
         </Panel>
       </div>
     </div>
