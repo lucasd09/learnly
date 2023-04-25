@@ -1,0 +1,3 @@
+interface PostProps {
+  post: Post;
+}
