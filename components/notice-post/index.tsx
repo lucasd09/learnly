@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const NoticePost: React.FC<PostProps> = ({ post }) => {
   return (
-    <div>
+    <div className={wrapper}>
       <div className={header}>
         <Icon icon="account_circle" />
         <div>
-          <h1>{post.name}</h1>
-          <p>{post.role}</p>
+          <h1 className={postname}>{post.name}</h1>
+          <p className={postrole}>{post.role}</p>
         </div>
       </div>
       <div>

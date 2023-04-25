@@ -5,4 +5,6 @@ export const header = style({
   alignItems: "center",
 });
 
-export const contentText = style({});
+export const contentText = style({
+  
+});
