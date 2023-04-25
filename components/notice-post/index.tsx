@@ -1,5 +1,5 @@
 import React from "react";
-import { contentText, header } from "./styles.css";
+import { contentText, header, postname, postrole, wrapper } from "./styles.css";
 import Icon from "../icon";
 import Image from "next/image";
 
