@@ -37,14 +37,6 @@ const Dashboard: NextPageWithLayout = () => {
             autoHeightMax={500}
           >
             <NoticePost post={post} />
-            <NoticePost post={post} />
-            <NoticePost post={post} />
-            <NoticePost post={post} />
-            <NoticePost post={post} />
-            <NoticePost post={post} />
-            <NoticePost post={post} />
-            <NoticePost post={post} />
-            <NoticePost post={post} />
           </Scrollbars>
         </Panel>
       </div>

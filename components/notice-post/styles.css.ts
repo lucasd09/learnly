@@ -1,6 +1,8 @@
 import { style } from "@vanilla-extract/css";
 
-export const wrapper = style({});
+export const wrapper = style({
+  width: "",
+});
 
 export const header = style({
   display: "flex",
