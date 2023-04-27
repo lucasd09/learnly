@@ -1,4 +1,5 @@
 import React from "react";
+import Icon from "../icon";
 import {
   contentText,
   header,
@@ -6,8 +7,9 @@ import {
   postrole,
   wrapper,
   imgHeader,
+  iconButton,
+  buttonBar
 } from "./styles.css";
-import Image from "next/image";
 
 const NoticePost: React.FC<PostProps> = ({ post }) => {
   return (
@@ -22,7 +24,12 @@ const NoticePost: React.FC<PostProps> = ({ post }) => {
       <div>
         <p className={contentText}>{post.text}</p>
       </div>
-      <div></div>
+      <div className={buttonBar}>
+        {post.imgURL}
+      </div>
+      <div className={buttonBar}>
+        <button className={iconButton}><Icon icon='mail'/>Visualizar</button>
+      </div>
     </div>
   );
 };
