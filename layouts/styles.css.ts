@@ -20,7 +20,7 @@ export const topbar = style({
 });
 
 export const childrenLayout = style({
-  paddingTop: "61px",
+  paddingTop: "45px",
   paddingLeft: "40px",
   paddingRight: "40px",
 });

@@ -29,9 +29,7 @@ const Dashboard: NextPageWithLayout = () => {
             universal
             autoHeight
             autoHide
-            // Hide delay in ms
             autoHideTimeout={1000}
-            // Duration for hide animation in ms.
             autoHideDuration={200}
             hideTracksWhenNotNeeded
             autoHeightMax={500}

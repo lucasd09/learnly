@@ -14,20 +14,21 @@ export const header = style({
 });
 
 export const contentText = style({
+  fontSize: "12px",
   margin: "8px",
 });
 
 export const postname = style({
-  fontSize: "24px",
-});
-
-export const postrole = style({
   fontSize: "18px",
 });
 
+export const postrole = style({
+  fontSize: "16px",
+});
+
 export const imgHeader = style({
-  width: "50px",
-  height: "50px",
+  width: "40px",
+  height: "40px",
   backgroundColor: "grey",
   borderRadius: "100%",
   marginRight: "8px",
@@ -36,7 +37,7 @@ export const imgHeader = style({
 export const iconButton = style({
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center',
+  justifyContent: 'space-evenly',
   backgroundColor: '#6366f1',
   border: 'none',
   width: '124px',
@@ -45,6 +46,7 @@ export const iconButton = style({
   color: 'white',
   fontWeight: '600',
   fontSize: '16px',
+  lineHeight: '32px',
   cursor: 'pointer'
 });
 
