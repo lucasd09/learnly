@@ -8,8 +8,8 @@ import { content } from "./styles.css";
 import Scrollbars from "react-custom-scrollbars";
 
 const post: Post = {
-  name: "luis hilario",
-  role: "Coordenador",
+  name: "Luis Hilário Tobler Garcia",
+  role: "Coordenador BCC",
   text: "Bom dia pessoal! estão Abertas as incrições para o POSCOMP, espero todos vocês lá!",
   imgURL: "URL",
 };
@@ -29,16 +29,11 @@ const Dashboard: NextPageWithLayout = () => {
             universal
             autoHeight
             autoHide
-            // Hide delay in ms
             autoHideTimeout={1000}
-            // Duration for hide animation in ms.
             autoHideDuration={200}
             hideTracksWhenNotNeeded
             autoHeightMax={500}
           >
-            <NoticePost post={post} />
-            <NoticePost post={post} />
-            <NoticePost post={post} />
             <NoticePost post={post} />
             <NoticePost post={post} />
             <NoticePost post={post} />
