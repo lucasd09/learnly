@@ -5,7 +5,7 @@ export const wrapper = style({
   minHeight: "200px",
   maxWidth: "500px",
   margin: "0 12px 12px 12px",
-  borderBottom: '1px solid gray'
+  borderBottom: "1px solid gray",
 });
 
 export const header = style({
@@ -35,22 +35,22 @@ export const imgHeader = style({
 });
 
 export const iconButton = style({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-evenly',
-  backgroundColor: '#6366f1',
-  border: 'none',
-  width: '124px',
-  height: '32px',
-  borderRadius : '8px',
-  color: 'white',
-  fontWeight: '600',
-  fontSize: '16px',
-  lineHeight: '32px',
-  cursor: 'pointer'
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-evenly",
+  backgroundColor: "#6366f1",
+  border: "none",
+  width: "124px",
+  height: "32px",
+  borderRadius: "8px",
+  color: "white",
+  fontWeight: "600",
+  fontSize: "16px",
+  lineHeight: "32px",
+  cursor: "pointer",
 });
 
 export const buttonBar = style({
-  display: 'flex',
-  justifyContent: 'center'
+  display: "flex",
+  justifyContent: "center",
 });

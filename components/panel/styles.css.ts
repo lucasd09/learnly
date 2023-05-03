@@ -1,7 +1,7 @@
 import { style, styleVariants } from "@vanilla-extract/css";
 
 export const panelContainer = styleVariants({
-  fit : {
+  fit: {
     backgroundColor: "#FFFFFF",
     borderRadius: "10px",
     border: "1px solid #D1D5DB",
@@ -11,7 +11,7 @@ export const panelContainer = styleVariants({
     overflow: "clip",
     scrollBehavior: "smooth",
   },
-  fullWidth : {
+  fullWidth: {
     backgroundColor: "#FFFFFF",
     borderRadius: "10px",
     border: "1px solid #D1D5DB",
@@ -19,7 +19,7 @@ export const panelContainer = styleVariants({
     width: "100%",
     overflow: "clip",
     scrollBehavior: "smooth",
-  }
+  },
 });
 
 export const panelTitleContainer = style({

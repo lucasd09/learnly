@@ -11,8 +11,8 @@ const Grades: NextPageWithLayout = () => {
     <div>
       <h1 className={titleLayout}>Notas</h1>
       <div className={content}>
-        <Panel title='' fullWidth>
-         <DataGrid />
+        <Panel title="" fullWidth>
+          <DataGrid />
         </Panel>
       </div>
     </div>

@@ -8,7 +8,7 @@ import {
   wrapper,
   imgHeader,
   iconButton,
-  buttonBar
+  buttonBar,
 } from "./styles.css";
 
 const NoticePost: React.FC<PostProps> = ({ post }) => {
@@ -24,11 +24,12 @@ const NoticePost: React.FC<PostProps> = ({ post }) => {
       <div>
         <p className={contentText}>{post.text}</p>
       </div>
+      <div className={buttonBar}>{post.imgURL}</div>
       <div className={buttonBar}>
-        {post.imgURL}
-      </div>
-      <div className={buttonBar}>
-        <button className={iconButton}><Icon icon='mail'/>Visualizar</button>
+        <button className={iconButton}>
+          <Icon icon="mail" />
+          Visualizar
+        </button>
       </div>
     </div>
   );
