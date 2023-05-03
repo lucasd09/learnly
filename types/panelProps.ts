@@ -1,6 +1,5 @@
 interface PanelProps {
-    title: string;
-    children: React.ReactNode;
-    fullWidth: Boolean
+  title: string;
+  children: React.ReactNode;
+  fullWidth?: Boolean;
 }
-  

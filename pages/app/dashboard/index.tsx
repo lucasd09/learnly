@@ -47,9 +47,9 @@ const Dashboard: NextPageWithLayout = () => {
   const [domLoaded, setDomLoaded] = useState(false);
 
   useEffect(() => {
-    setDomLoaded(true)
+    setDomLoaded(true);
   }, []);
-  
+
   return (
     <div>
       <h1 className={titleLayout}>Visão Geral</h1>
@@ -59,7 +59,11 @@ const Dashboard: NextPageWithLayout = () => {
             {domLoaded && (
               <GridContainer>
                 {gridItemList.map((gridItem, index) => (
-                  <GridItem name={gridItem.name} frequency={gridItem.frequency} key={index}/>
+                  <GridItem
+                    name={gridItem.name}
+                    frequency={gridItem.frequency}
+                    key={index}
+                  />
                 ))}
               </GridContainer>
             )}
