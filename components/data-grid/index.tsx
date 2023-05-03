@@ -1,5 +1,5 @@
 import { FC } from "react";
-import source from "../../pages/api/mock/mock-grid-subjects.json";
+import source from "../../services/api/mock/mock-grid-subjects.json";
 import { tableRow, tableData, tableContainer, tableHead } from "./styles.css";
 
 const DataGrid: FC = () => {
