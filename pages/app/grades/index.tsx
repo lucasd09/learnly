@@ -1,10 +1,11 @@
-import DataGrid from "@/components/data-grid";
+import DataGrid from "@/components/grid-grades";
 import Panel from "@/components/panel";
 import { titleLayout } from "@/layouts/styles.css";
 import TemplateLayout from "@/layouts/templateLayout";
 import { NextPageWithLayout } from "@/types/NextPageWithLayout";
 import React, { ReactElement } from "react";
 import { content } from "./styles.css";
+import GridGrades from "@/components/grid-grades";
 
 const Grades: NextPageWithLayout = () => {
   return (
@@ -12,7 +13,7 @@ const Grades: NextPageWithLayout = () => {
       <h1 className={titleLayout}>Notas</h1>
       <div className={content}>
         <Panel title="" fullWidth>
-          <DataGrid />
+          <GridGrades />
         </Panel>
       </div>
     </div>

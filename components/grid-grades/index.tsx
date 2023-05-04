@@ -2,7 +2,7 @@ import { FC } from "react";
 import source from "../../services/api/mock/mock-grid-subjects.json";
 import { tableRow, tableData, tableContainer, tableHead } from "./styles.css";
 
-const DataGrid: FC = () => {
+const GridGrades: FC = () => {
   return (
     <table className={tableContainer}>
       <thead>
@@ -25,4 +25,4 @@ const DataGrid: FC = () => {
   );
 };
 
-export default DataGrid;
+export default GridGrades;
