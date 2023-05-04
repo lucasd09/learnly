@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "subject": "Computação Gráfica",
+    "firstGrade": 9,
+    "secondGrade": 10,
+    "finalgrade": 9.5 
+  },
+  {
+    "id": 2,
+    "subject": "Cálculo Numérico",
+    "firstGrade": 7,
+    "secondGrade": 9,
+    "finalgrade": 8
+  },
+  {
+    "id": 3,
+    "subject": "Inteligência Artificial",
+    "firstGrade": 6,
+    "secondGrade": 3,
+    "finalgrade": 4.5
+  },
+  {
+    "id": 4,
+    "subject": "Development and Design Patterns",
+    "firstGrade": 10,
+    "secondGrade": 10,
+    "finalgrade": 10
+  },
+  {
+    "id": 5,
+    "subject": "Segurança da Informação e Auditoria",
+    "firstGrade": 10,
+    "secondGrade": 9,
+    "finalgrade": 9.5
+  },
+  {
+    "id": 6,
+    "subject": "Estágio Supervisionado I",
+    "firstGrade": 8,
+    "secondGrade": 7,
+    "finalgrade": 7.5
+  }  
+]

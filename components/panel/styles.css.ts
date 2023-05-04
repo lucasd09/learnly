@@ -1,14 +1,25 @@
-import { style } from "@vanilla-extract/css";
+import { style, styleVariants } from "@vanilla-extract/css";
 
-export const panelContainer = style({
-  backgroundColor: "#FFFFFF",
-  borderRadius: "10px",
-  border: "1px solid #D1D5DB",
-  marginTop: "12px",
-  width: "fit-content",
-  maxHeight: "530px",
-  overflow: "clip",
-  scrollBehavior: "smooth",
+export const panelContainer = styleVariants({
+  fit: {
+    backgroundColor: "#FFFFFF",
+    borderRadius: "10px",
+    border: "1px solid #D1D5DB",
+    marginTop: "12px",
+    width: "fit-content",
+    maxHeight: "530px",
+    overflow: "clip",
+    scrollBehavior: "smooth",
+  },
+  fullWidth: {
+    backgroundColor: "#FFFFFF",
+    borderRadius: "10px",
+    border: "1px solid #D1D5DB",
+    marginTop: "12px",
+    width: "100%",
+    overflow: "clip",
+    scrollBehavior: "smooth",
+  },
 });
 
 export const panelTitleContainer = style({

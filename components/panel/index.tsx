@@ -5,9 +5,9 @@ import {
 } from "./styles.css";
 import { FC } from "react";
 
-const Panel: FC<PanelProps> = ({ title, children }) => {
+const Panel: FC<PanelProps> = ({ title, children, fullWidth }) => {
   return (
-    <div className={panelContainer}>
+    <div className={fullWidth ? panelContainer.fullWidth : panelContainer.fit}>
       <div className={panelTitleContainer}>{title}</div>
       <div className={panelContent}>{children}</div>
     </div>

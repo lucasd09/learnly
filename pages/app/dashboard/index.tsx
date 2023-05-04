@@ -6,7 +6,7 @@ import Panel from "@/components/panel";
 import NoticePost from "@/components/notice-post";
 import { content } from "./styles.css";
 import Scrollbars from "react-custom-scrollbars";
-import GridContainer from "@/components/gridContainer";
+import GridContainer from "@/components/grid-container";
 import GridItem from "@/components/gridItem";
 import { link } from "@/components/sidebar/styles.css";
 import Link from "next/link";
@@ -49,9 +49,9 @@ const Dashboard: NextPageWithLayout = () => {
   const [domLoaded, setDomLoaded] = useState(false);
 
   useEffect(() => {
-    setDomLoaded(true)
+    setDomLoaded(true);
   }, []);
-  
+
   return (
     <div>
       <h1 className={titleLayout}>Visão Geral</h1>
