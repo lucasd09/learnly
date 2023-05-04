@@ -8,6 +8,8 @@ import { content } from "./styles.css";
 import Scrollbars from "react-custom-scrollbars";
 import GridContainer from "@/components/grid-container";
 import GridItem from "@/components/gridItem";
+import { link } from "@/components/sidebar/styles.css";
+import Link from "next/link";
 
 const post: Post = {
   name: "Luis Hilário Tobler Garcia",
@@ -57,15 +59,13 @@ const Dashboard: NextPageWithLayout = () => {
         <div>
           <Panel title="Matérias">
             {domLoaded && (
-              <GridContainer>
-                {gridItemList.map((gridItem, index) => (
-                  <GridItem
-                    name={gridItem.name}
-                    frequency={gridItem.frequency}
-                    key={index}
-                  />
-                ))}
-              </GridContainer>
+              <Link href={"subjects"} className={link}>
+                <GridContainer>
+                  {gridItemList.map((gridItem, index) => (
+                    <GridItem name={gridItem.name} frequency={gridItem.frequency} key={index}/>
+                  ))}
+                </GridContainer>
+              </Link>
             )}
           </Panel>
         </div>
