@@ -3,36 +3,36 @@
     "id": 1,
     "subject": "Computação Gráfica",
     "abcences": 9,
-    "maxAbcences": 15
+    "limit": 15
   },
   {
     "id": 2,
     "subject": "Cálculo Numérico",
     "abcences": 9,
-    "maxAbcences": 15
+    "limit": 15
   },
   {
     "id": 3,
     "subject": "Inteligência Artificial",
     "abcences": 9,
-    "maxAbcences": 15
+    "limit": 15
   },
   {
     "id": 4,
     "subject": "Development and Design Patterns",
     "abcences": 3,
-    "maxAbcences": 15
+    "limit": 15
   },
   {
     "id": 5,
     "subject": "Segurança da Informação e Auditoria",
     "abcences": 9,
-    "maxAbcences": 15
+    "limit": 15
   },
   {
     "id": 6,
     "subject": "Estágio Supervisionado I",
     "abcences": 0,
-    "maxAbcences": 2
+    "limit": 2
   }
 ]
