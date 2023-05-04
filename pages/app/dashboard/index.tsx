@@ -11,39 +11,9 @@ import GridItem from "@/components/gridItem";
 import { link } from "@/components/sidebar/styles.css";
 import Link from "next/link";
 
-const post: Post = {
-  name: "Luis Hilário Tobler Garcia",
-  role: "Coordenador BCC",
-  text: "Bom dia pessoal! estão Abertas as incrições para o POSCOMP, espero todos vocês lá!",
-  imgURL: "URL",
-};
-
-const gridItemList: GridItemProps[] = [
-  {
-    name: "Computação Gráfica",
-    frequency: 90,
-  },
-  {
-    name: "Cálculo Numérico",
-    frequency: 85,
-  },
-  {
-    name: "Inteligência Artificial",
-    frequency: 3,
-  },
-  {
-    name: "Development and Design Patterns",
-    frequency: 100,
-  },
-  {
-    name: "Segurança da Informação e Auditoria",
-    frequency: 75,
-  },
-  {
-    name: "Estágio Supervisionado I",
-    frequency: 100,
-  },
-];
+// MOCKS
+import subjectsSource from "@/services/api/mock/mock-dashboard-subjects.json";
+import postsSource from "@/services/api/mock/mock-dashboard-posts.json";
 
 const Dashboard: NextPageWithLayout = () => {
   const [domLoaded, setDomLoaded] = useState(false);
@@ -61,8 +31,8 @@ const Dashboard: NextPageWithLayout = () => {
             {domLoaded && (
               <Link href={"subjects"} className={link}>
                 <GridContainer>
-                  {gridItemList.map((gridItem, index) => (
-                    <GridItem name={gridItem.name} frequency={gridItem.frequency} key={index}/>
+                  {subjectsSource.map((data) => (
+                    <GridItem name={data.name} frequency={data.frequency} key={data.id}/>
                   ))}
                 </GridContainer>
               </Link>
@@ -79,12 +49,9 @@ const Dashboard: NextPageWithLayout = () => {
             hideTracksWhenNotNeeded
             autoHeightMax={500}
           >
-            <NoticePost post={post} />
-            <NoticePost post={post} />
-            <NoticePost post={post} />
-            <NoticePost post={post} />
-            <NoticePost post={post} />
-            <NoticePost post={post} />
+            {postsSource.map((data) => (
+              <NoticePost post={data} key={data.id}/>
+            ))}
           </Scrollbars>
         </Panel>
       </div>

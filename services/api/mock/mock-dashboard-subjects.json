@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Computação Gráfica",
+    "frequency": 90
+  },
+  {
+    "id": 2,
+    "name": "Cálculo Numérico",
+    "frequency": 85
+  },
+  {
+    "id": 3,
+    "name": "Inteligência Artificial",
+    "frequency": 3
+  },
+  {
+    "id": 4,
+    "name": "Development and Design Patterns",
+    "frequency": 100
+  },
+  {
+    "id": 5,
+    "name": "Segurança da Informação e Auditoria",
+    "frequency": 75
+  },
+  {
+    "id": 6,
+    "name": "Estágio Supervisionado I",
+    "frequency": 100
+  }
+]
