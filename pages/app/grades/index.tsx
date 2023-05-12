@@ -3,7 +3,7 @@ import { titleLayout } from "@/layouts/styles.css";
 import TemplateLayout from "@/layouts/templateLayout";
 import { NextPageWithLayout } from "@/types/NextPageWithLayout";
 import React, { ReactElement } from "react";
-import { content } from "./styles.css";
+import { content } from "../../../styles/grades.css";
 import GridGrades from "@/components/grid-grades";
 
 const Grades: NextPageWithLayout = () => {

@@ -4,12 +4,12 @@ import { NextPageWithLayout } from "@/types/NextPageWithLayout";
 import React, { ReactElement, useEffect, useState } from "react";
 import Panel from "@/components/panel";
 import NoticePost from "@/components/notice-post";
-import { content, leftSide } from "./styles.css";
-import Scrollbars from "react-custom-scrollbars";
+import { content, leftSide } from "../../../styles/dashboard.css";
 import GridContainer from "@/components/grid-container";
 import GridItem from "@/components/gridItem";
 import { link } from "@/components/sidebar/styles.css";
 import Link from "next/link";
+import Scrollbars from "react-custom-scrollbars-2";
 
 // MOCKS
 import subjectsSource from "@/services/api/mock/mock-dashboard-subjects.json";

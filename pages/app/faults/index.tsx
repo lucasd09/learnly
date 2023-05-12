@@ -2,7 +2,7 @@ import { titleLayout } from "@/layouts/styles.css";
 import TemplateLayout from "@/layouts/templateLayout";
 import { NextPageWithLayout } from "@/types/NextPageWithLayout";
 import React, { ReactElement } from "react";
-import { content } from "./styles.css";
+import { content } from "../../../styles/faults.css";
 import GridFaults from "@/components/grid-faults";
 import Panel from "@/components/panel";
 

@@ -11,7 +11,7 @@ import {
   checkboxContainer,
   buttonContainer,
   text,
-} from "./styles.css";
+} from "../../styles/auth.css";
 import Logo from "@/components/logo";
 
 const Auth: React.FC = () => {
