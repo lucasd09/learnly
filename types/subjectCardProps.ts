@@ -1,0 +1,3 @@
+interface SubjectCardProps {
+    name: string;
+}
