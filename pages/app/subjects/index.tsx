@@ -3,7 +3,7 @@ import TemplateLayout from "@/layouts/templateLayout";
 import { NextPageWithLayout } from "@/types/NextPageWithLayout";
 import React, { ReactElement, useState } from "react";
 import SubjectCard from "@/components/subject-card";
-import { content } from "./styles.css";
+import { content } from "../../../styles/subjects.css";
 
 import subjectsSource from "@/services/api/mock/mock-dashboard-subjects.json";
 
@@ -14,7 +14,7 @@ const Subjects: NextPageWithLayout = () => {
       <div>
         <div className={content}>
           {subjectsSource.map((data) => (
-            <SubjectCard name={data.name} key={data.id}/>
+            <SubjectCard name={data.name} key={data.id} />
           ))}
         </div>
       </div>
