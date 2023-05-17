@@ -13,8 +13,17 @@ import {
   text,
 } from "../../styles/auth.css";
 import Logo from "@/components/logo";
+import { useRouter } from 'next/router';
 
 const Auth: React.FC = () => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    if (1 == 1) {
+      router.push('/app/dashboard')
+    } 
+  } 
+
   return (
     <div className={wrapper}>
       <div className={container}>
@@ -34,8 +43,7 @@ const Auth: React.FC = () => {
           <Link href={"/"}>Esqueci minha senha</Link>
         </div>
         <div className={buttonContainer}>
-          <button className={button.primary}>Login</button>
-          <button className={button.secondary}>Continuar com Google</button>
+          <button className={button.primary} onClick={handleClick}>Login</button>
         </div>
 
         <p className={text}>
