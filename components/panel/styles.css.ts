@@ -6,6 +6,8 @@ export const panelContainer = styleVariants({
     borderRadius: "10px",
     border: "1px solid #D1D5DB",
     marginTop: "12px",
+    marginRight: "48px",
+    marginBottom: "56px",
     width: "fit-content",
     maxHeight: "530px",
     overflow: "clip",
